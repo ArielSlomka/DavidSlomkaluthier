@@ -1,0 +1,103 @@
+@import 'navbar';
+
+.header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('../img/imgHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; // la medida vh (viewport height) indica que el alto es proporcional a la altura de la ventana del navegador
+    display: flex;
+    align-items: center;
+
+    &__titulos {
+        margin-bottom: 60px;
+
+        &.show {
+            .header__titulo,
+            .header__subtitulo {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    &__titulo {
+        font-size: 180px;
+        color: #EFEBE5;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
+        opacity: 0;
+        transform: translateY(50px);
+        transition: .5s .5s;
+    }
+
+    &__subtitulo {
+        font-size: 100px;
+        color: #EFEBE5;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
+        opacity: 0;  
+        transform: translateY(50px);
+        transition: .5s 1s;
+    }
+}
+    
+.ds-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 175px 0 60px;
+    height: 100%;
+}
+
+
+// Media query para dispositivos móviles
+@media only screen and (max-width: 767px) {
+    .header {
+      height: auto;
+      width: auto;
+   
+        .ds-container {
+            padding: 50px 0;
+        }
+  
+        .header__titulos {
+            height: auto;
+            text-align: center;            
+        }
+  
+        .header__titulo {
+            font-size: 80px;
+        }
+  
+        .header__subtitulo {
+            font-size: 50px;
+        }
+    }
+}
+
+
+  // Media query para tablets
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+      // padding: 150px 0 60px;
+  
+        .header__titulos {
+            height: auto;
+            text-align: center;
+        }
+  
+        .header__titulo {
+            font-size: 120px;
+        }
+  
+        .header__subtitulo {
+            font-size: 70px;
+        }  
+    }
+}
+
+.ds-container {
+    padding: 100px 0;
+}

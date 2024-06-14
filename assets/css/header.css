@@ -1,0 +1,143 @@
+.navbar {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(98, 62, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 0;
+    z-index: 99;
+    height: 0;
+    overflow: hidden;
+    transition: .5s; }
+    .navbar__lista {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0  120px;
+      width: 100%;
+      margin-bottom: 0;
+      height: max-content;
+      opacity: 0;
+      transition: .5s .5s; }
+      .navbar__lista.show {
+        opacity: 1; }
+    .navbar__item {
+      display: inline;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      padding: 10px 20px; }
+      .navbar__item a {
+        display: inline-block;
+        color: #EFEBE5;
+        text-decoration: none;
+        transition: .5s;
+        border-radius: 5px;
+        font-size: 25px;
+        line-height: 28px;
+        position: relative; }
+        .navbar__item a::after {
+          content: "";
+          width: 0;
+          height: 1px;
+          background-color: #a4a4a4;
+          position: absolute;
+          bottom: -2px;
+          right: 0;
+          transition: .5s; }
+        .navbar__item a:hover {
+          color: #a4a4a4; }
+          .navbar__item a:hover::after {
+            left: 0;
+            width: 100%; }
+      .navbar__item:first-child {
+        padding-left: 0; }
+      .navbar__item:last-child {
+        padding-right: 0; }
+  
+  @media only screen and (max-width: 767px) {
+    .navbar__lista {
+      justify-content: center;
+      padding: 0; }
+    .navbar__item {
+      margin-bottom: 10px;
+      padding: 10px; }
+      .navbar__item a {
+        transition: .5s;
+        border-radius: 5px;
+        font-size: 15px; } }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar__lista {
+      padding: 0;
+      justify-content: center; }
+    .navbar__item {
+      margin-bottom: 30px;
+      padding: 0px 25px; }
+      .navbar__item a {
+        font-size: 20px;
+        transition: .5s;
+        border-radius: 5px; } }
+  
+  .header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("../img/imgHeader.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+    .header .ds-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 175px 0 60px;
+      height: 100%; }
+    .header__titulos {
+      margin-bottom: 60px; }
+      .header__titulos.show .header__titulo,
+      .header__titulos.show .header__subtitulo {
+        opacity: 1;
+        transform: translateY(0px); }
+    .header__titulo {
+      font-size: 180px;
+      color: #EFEBE5;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: .5s .5s; }
+    .header__subtitulo {
+      font-size: 100px;
+      color: #EFEBE5;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: .5s 1s; }
+  
+  @media only screen and (max-width: 767px) {
+    .header {
+      height: auto;
+      width: auto; }
+      .header .ds-container {
+        padding: 50px 0; }
+      .header .header__titulos {
+        height: auto;
+        text-align: center; }
+      .header .header__titulo {
+        font-size: 80px; }
+      .header .header__subtitulo {
+        font-size: 50px; } }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header .ds-container {
+      padding: 100px 0; }
+    .header .header__titulos {
+      height: auto;
+      text-align: center; }
+    .header .header__titulo {
+      font-size: 120px; }
+    .header .header__subtitulo {
+      font-size: 70px; } }
+  
