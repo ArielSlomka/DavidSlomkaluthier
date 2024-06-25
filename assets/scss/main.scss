@@ -1,7 +1,15 @@
+@import './utils/fonts.scss';
+@import './utils/vars.scss';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font;
+}
+
+body {
+    margin: 0;
 }
 
 .ds-container {
@@ -15,6 +23,12 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    @media (min-width: 1600px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 img {

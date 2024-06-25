@@ -2,18 +2,20 @@
 /* 
 Template Name: Index
 */
-
+$imageIndex1 = get_field("image_index_1");
+$imageIndex2 = get_field("image_index_2");
+$imageIndex3 = get_field("image_index_3");
 get_header();
 ?>
 
 
-<main>
-    <div class="ds-container">
+<main class="index_main">
+    <div class="container-index">
         <h3 class="titulo-modulo-card">Mi trabajo</h3>
         <div class="cards-container">
             <div class="card">
                 <div class="card__image">
-                    <img src="./img/imgCardTres.jpg" alt="Imagen 1">
+                    <img src="<?php echo $imageIndex1; ?>" alt="Imagen 1">
                 </div>
                 <div class="card__descripcion">
                     <h4>Reparaciones</h4>
@@ -24,7 +26,7 @@ get_header();
             </div>
             <div class="card">
                 <div class="card__image">
-                    <img src="./img/instrumentos122.jpg" alt="Imagen 2">
+                    <img src="<?php echo $imageIndex2; ?>" alt="Imagen 2">
                 </div>
                 <div class="card__descripcion">
                     <h4>Construccion propia</h4>
@@ -34,7 +36,7 @@ get_header();
             </div>
             <div class="card">
                 <div class="card__image">
-                    <img src="./img/clases1.jpg" alt="Imagen 3">
+                    <img src="<?php echo $imageIndex3; ?>" alt="Imagen 3">
                 </div>
                 <div class="card__descripcion">
                     <h4>Cursos</h4>

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.title {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.title--xl {
+  font-size: 72px;
+  text-decoration: none;
+}
+.title--l {
+  font-size: 60px;
+  text-decoration: underline;
+}
+.title--m {
+  font-size: 48px;
+  text-decoration: none;
+}
+.title--s {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.title--xs {
+  font-size: 18px;
+  text-decoration: none;
+}

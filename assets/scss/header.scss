@@ -1,4 +1,7 @@
+@import './utils/fonts.scss';
+@import './utils/vars.scss';
 @import 'navbar';
+
 
 .header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('../img/imgHeader.jpg');
@@ -7,7 +10,12 @@
     min-height: 100vh; // la medida vh (viewport height) indica que el alto es proporcional a la altura de la ventana del navegador
     display: flex;
     align-items: center;
-
+    
+    &__container {
+        display: flex;
+        margin: auto;
+    }
+    
     &__titulos {
         margin-bottom: 60px;
 
@@ -24,7 +32,6 @@
         font-size: 180px;
         color: #EFEBE5;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
         text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
         opacity: 0;
         transform: translateY(50px);
@@ -35,7 +42,6 @@
         font-size: 100px;
         color: #EFEBE5;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
         text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
         opacity: 0;  
         transform: translateY(50px);
@@ -43,13 +49,6 @@
     }
 }
     
-.ds-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 175px 0 60px;
-    height: 100%;
-}
 
 
 // Media query para dispositivos móviles
@@ -98,6 +97,6 @@
     }
 }
 
-.ds-container {
+/* .ds-container {
     padding: 100px 0;
-}
+} */
