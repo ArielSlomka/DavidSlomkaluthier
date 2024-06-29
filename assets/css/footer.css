@@ -28,6 +28,11 @@
   margin: auto;
   padding: 10px;
 }
+.footer__box .logo {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
 .footer__box a {
   display: inline-flex;
   margin: auto;

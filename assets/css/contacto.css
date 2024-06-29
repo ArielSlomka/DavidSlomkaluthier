@@ -17,11 +17,11 @@ main {
 }
 
 .wpcf7-form {
-  min-width: 35%;
+  width: 400px;
   margin: auto;
   background-color: #623E2A;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;

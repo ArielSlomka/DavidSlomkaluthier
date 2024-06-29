@@ -1,11 +1,11 @@
 // declaro constantes que guardan cada elemento principal que voy a usar para hacerles modificaciones.
-const navbar = document.querySelector(`.nav`);
+const navbar = document.querySelector(`.navbar`);
 const titulo = document.querySelector(`.header__titulos`);
 
 // declaro las funciones que voy a usar, con las intrucciones de lo que quiero que pase.
 function hacerleCosasAlNavbar() {
     // busco el menu dentro del navbar
-    let menu = navbar.querySelector('.nav > ul');
+    let menu = navbar.querySelector('.box-menu .main-menu');
 
     // agrego un setTimeout para que las cosas pasen con algo de retraso.
     setTimeout(() => {
@@ -16,6 +16,7 @@ function hacerleCosasAlNavbar() {
 
         // le doy al navbar la altura exacta que tiene el menu
         navbar.style.height = `${menuHeight}px`;
+        navbar.classList.add('show');
     }, 1000)
 }
 

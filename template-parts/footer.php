@@ -8,8 +8,8 @@
             <p>Telefono: +5491136281948</p>
             <p>Mail: sym_flute@hotmail.com</p>
         </div>
-        <div class="footer__box">
-            <img src="../assets/img/LOGOMASGRANDE.png" alt="logo">
+        <div class="footer__box box-logo">
+            <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/img/logodslposta.png'; ?>" alt="logo">
         </div>
         <div class="footer__box">
             <!-- <h4 class="footer__subtitulo">Mis redes</h4> -->

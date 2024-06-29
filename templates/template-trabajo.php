@@ -15,9 +15,11 @@ $imageTrabajo5 = get_field("image_trabajo_5");
     <div class="ds-container">
         <div class="modulo-mi-trabajo">
             <div class="modulo-mi-trabajo__texto">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae similique, temporibus aliquam obcaecati consectetur iste ab ut necessitatibus nulla optio! Deleniti
-                    consectetur repellat quod corporis necessitatibus ducimus culpa accusamus sint! Inventore, neque temporibus voluptas nisi sunt itaque aliquid repellat?</p>
+                <h4>Tudel para clarinete bajo Leblanc</h4>
+                <p>Nuestros tudeles para clarinete bajo combinan la calidez de la madera con la precisión constructiva. 
+                   Su diseño curvado y acabado pulido mejoran tanto la funcionalidad como la estética, ofreciendo una mejor calidad de sonido y comodidad para el músico.
+                   Mayor precisión en la afinación. 
+                   Sonido rico en armónicos que proporciona una sensación auditiva completa, por la presencia de  más parciales armónicos que refuerzan la sensación del timbre.</p>
             </div>
             <div class="modulo-mi-trabajo__imagen">
                 <img src="<?php echo ($imageTrabajo1); ?>" alt="imagen">
@@ -25,7 +27,7 @@ $imageTrabajo5 = get_field("image_trabajo_5");
         </div>
     </div>
     <div class="ds-container">
-        <div class="modulo-mi-trabajo">
+        <div class="modulo-mi-trabajo reverse">
             <div class="modulo-mi-trabajo__imagen">
                 <img src="<?php echo ($imageTrabajo2); ?>" alt="imagen">
             </div>
@@ -50,7 +52,7 @@ $imageTrabajo5 = get_field("image_trabajo_5");
         </div>
     </div>
     <div class="ds-container">
-        <div class="modulo-mi-trabajo">
+        <div class="modulo-mi-trabajo reverse">
             <div class="modulo-mi-trabajo__imagen">
                 <img src="<?php echo ($imageTrabajo4); ?>" alt="imagen">
             </div>

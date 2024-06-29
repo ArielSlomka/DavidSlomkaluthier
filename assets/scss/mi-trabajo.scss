@@ -14,7 +14,7 @@
 .modulo-mi-trabajo {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 75px;
     
 
     &__imagen {
@@ -51,28 +51,57 @@
 
 
 @media only screen and (max-width: 768px) {
+    .ds-container {
+        padding: 0 75px 0 75px;
+    }
+    
     .modulo-mi-trabajo {
-        grid-template-columns: 1fr; /* Cambia el diseño a una sola columna */
-        gap: 1px;
+        display: flex;
+        flex-direction: column; 
+    
+
+        &__imagen {
+            padding: 25px 0;
+            width: 100%;
+        }
+
+        &__texto {
+            margin: 5px 0 0 0;
+            width: 100%;
+        }
     }
 
-    .modulo-mi-trabajo__imagen {
-        padding: 25px 0;
-    }
-
-    .modulo-mi-trabajo__texto {
-        margin: 5px 0 0 0;
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .modulo-mi-trabajo {
-        grid-template-columns: repeat(2, 1fr); /* Vuelve al diseño de dos columnas */
-        padding: 50px 0;
+    .ds-container{
+        padding: 0 75px 0 75px;
     }
+    
+    .modulo-mi-trabajo {
+        display: flex;
+        flex-direction: column; 
 
-    .modulo-mi-trabajo__texto {
-        margin-top: 0px; /* Restaura el margen superior del texto */
-        font-size: 10px;
+        &__texto {
+            margin-top: 0px; 
+            font-size: 10px;
+            width: 100%;
+        
+            h4 {
+                padding: 35px 0 35px 0;
+            }
+        
+        }
+
+        &__imagen {
+            width: 100%;
+        }
+    }    
+    
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
