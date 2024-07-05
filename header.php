@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>David Slomka luthier</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/footer.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/galeria.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/acerca-de-mi.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/contacto.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/index.css'; ?>">

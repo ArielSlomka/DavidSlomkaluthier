@@ -4,17 +4,38 @@
   background-color: #EFEBE5;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 200px;
+  padding-bottom: 0;
+}
+
+.ds-container {
+  display: flex;
+  flex-direction: column;
+  gap: 265px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #623E2A;
+  padding-top: 150px;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .trabajo_main .ds-container:first-child {
-  padding-top: 100px;
+  padding-top: 265px;
+}
+
+.trabajo_main .ds-container:last-child {
+  padding-bottom: 265px;
 }
 
 .modulo-mi-trabajo {
   display: flex;
-  align-items: center;
   gap: 75px;
+  background-color: rgba(85, 85, 85, 0.062745098);
+  box-shadow: 4px 4px 12px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 .modulo-mi-trabajo__imagen {
   width: 50%;
@@ -32,51 +53,75 @@
   flex-direction: column;
   gap: 25px;
 }
-.modulo-mi-trabajo__texto h4 {
+.modulo-mi-trabajo__texto h3 {
   font-size: 35px;
   text-align: center;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 .modulo-mi-trabajo__texto p {
-  font-size: 18px;
+  font-size: 15px;
   padding: 25px;
   text-align: center;
   margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .ds-container {
-    padding: 0 75px 0 75px;
+  .trabajo_main {
+    gap: 100px;
+  }
+  .trabajo_main .ds-container:first-child {
+    padding-top: 100px;
+  }
+  .trabajo_main .ds-container:last-child {
+    padding-bottom: 100px;
+  }
+  .ds-container.container-trabajo {
+    padding: 0 30px 0 30px;
+    gap: 75px;
   }
   .modulo-mi-trabajo {
     display: flex;
     flex-direction: column;
+    gap: 35px;
   }
   .modulo-mi-trabajo__imagen {
-    padding: 25px 0;
     width: 100%;
   }
   .modulo-mi-trabajo__texto {
     margin: 5px 0 0 0;
     width: 100%;
+    gap: 0;
   }
   .reverse {
     flex-direction: column-reverse;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .ds-container {
-    padding: 0 75px 0 75px;
+  .trabajo_main {
+    gap: 100px;
+  }
+  .trabajo_main .ds-container:first-child {
+    padding-top: 100px;
+  }
+  .trabajo_main .ds-container:last-child {
+    padding-bottom: 100px;
+  }
+  .ds-container.container-trabajo {
+    padding: 0 120px;
+    gap: 165px;
   }
   .modulo-mi-trabajo {
     display: flex;
     flex-direction: column;
+    gap: 35px;
   }
   .modulo-mi-trabajo__texto {
     margin-top: 0px;
     font-size: 10px;
     width: 100%;
+    gap: 0;
   }
-  .modulo-mi-trabajo__texto h4 {
+  .modulo-mi-trabajo__texto h3 {
     padding: 35px 0 35px 0;
   }
   .modulo-mi-trabajo__imagen {

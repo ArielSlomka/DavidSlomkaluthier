@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 main {
-  padding-bottom: 100px;
+  padding-bottom: 125px;
+}
+
+.ds-container.container-contacto {
+  gap: 75px;
 }
 
 #titulo-contacto {
   text-align: center;
-  padding: 75px;
+  /* padding: 75px; */
   color: #EFEBE5;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 50px;
+  padding-top: 100px;
 }
 
 .wpcf7 {
@@ -25,15 +30,6 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  /* .campo {
-      margin-bottom: 20px;
-
-      label {
-          display: block;
-          margin-bottom: 5px;
-          font-weight: bold;
-          color: #EFEBE5;
-      } */
 }
 .wpcf7-form p {
   margin: auto;
@@ -64,4 +60,22 @@ main {
 }
 .wpcf7-form button:hover {
   background-color: #1a1a1a;
+}
+
+@media only screen and (max-width: 767px) {
+  #titulo-contacto {
+    padding: 75px 0 75px 0;
+  }
+}
+.ds-container.container-contacto {
+  gap: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #titulo-contacto {
+    padding: 75px 0 75px 0;
+  }
+}
+.ds-container.container-contacto {
+  gap: 0;
 }

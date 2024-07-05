@@ -8,71 +8,66 @@ $imageTrabajo2 = get_field("image_trabajo_2");
 $imageTrabajo3 = get_field("image_trabajo_3");
 $imageTrabajo4 = get_field("image_trabajo_4");
 $imageTrabajo5 = get_field("image_trabajo_5");
+$trabajoTitle1 = get_field("trabajo_title_1");
+$trabajoTitle2 = get_field("trabajo_title_2");
+$trabajoTitle3 = get_field("trabajo_title_3");
+$trabajoTitle4 = get_field("trabajo_title_4");
+$trabajoTitle5 = get_field("trabajo_title_5");
+$trabajoText1 = get_field("trabajo_text_1");
+$trabajoText2 = get_field("trabajo_text_2");
+$trabajoText3 = get_field("trabajo_text_3");
+$trabajoText4 = get_field("trabajo_text_4");
+$trabajoText5 = get_field("trabajo_text_5");
+$trabajoPrincipalTitle = get_field("trabajo_principal_title");
 ?>
 
 
 <main class="trabajo_main">
-    <div class="ds-container">
-        <div class="modulo-mi-trabajo">
-            <div class="modulo-mi-trabajo__texto">
-                <h4>Tudel para clarinete bajo Leblanc</h4>
-                <p>Nuestros tudeles para clarinete bajo combinan la calidez de la madera con la precisión constructiva. 
-                   Su diseño curvado y acabado pulido mejoran tanto la funcionalidad como la estética, ofreciendo una mejor calidad de sonido y comodidad para el músico.
-                   Mayor precisión en la afinación. 
-                   Sonido rico en armónicos que proporciona una sensación auditiva completa, por la presencia de  más parciales armónicos que refuerzan la sensación del timbre.</p>
-            </div>
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo ($imageTrabajo1); ?>" alt="imagen">
-            </div>
-        </div>
-    </div>
-    <div class="ds-container">
+    <h2><?php echo $trabajoPrincipalTitle ?></h2>
+    <div class="ds-container container-trabajo">
         <div class="modulo-mi-trabajo reverse">
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo ($imageTrabajo2); ?>" alt="imagen">
-            </div>
             <div class="modulo-mi-trabajo__texto">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p> Comence a acercarme a la música a los 14 años, con mi primer flauta, la cual me llego de regalo.
-                    Con mi primer profesor de flauta, aprendí a limpiar, desarmar y hacer pequeñas correcciones y ajustes a mi instrumento.
-                    Años mas tarde, en mi adolescencia construí con amigos una guitarra eléctrica.</p>
+                <h3><?php echo $trabajoTitle1 ?></h3>
+                <p><?php echo $trabajoText1 ?></p>
+            </div>
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo1; ?>" alt="imagen">
             </div>
         </div>
-    </div>
-    <div class="ds-container">
         <div class="modulo-mi-trabajo">
-            <div class="modulo-mi-trabajo__texto">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae similique, temporibus aliquam obcaecati consectetur iste ab ut necessitatibus nulla optio! Deleniti
-                    consectetur repellat quod corporis necessitatibus ducimus culpa accusamus sint! Inventore, neque temporibus voluptas nisi sunt itaque aliquid repellat?</p>
-            </div>
             <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo ($imageTrabajo3); ?>" alt="imagen">
+                <img src="<?php echo $imageTrabajo2; ?>" alt="imagen">
+            </div>
+            <div class="modulo-mi-trabajo__texto">
+                <h3><?php echo $trabajoTitle2; ?></h3>
+                <p><?php echo $trabajoText2; ?></p>
             </div>
         </div>
-    </div>
-    <div class="ds-container">
         <div class="modulo-mi-trabajo reverse">
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo ($imageTrabajo4); ?>" alt="imagen">
-            </div>
             <div class="modulo-mi-trabajo__texto">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p> Comence a acercarme a la música a los 14 años, con mi primer flauta, la cual me llego de regalo.
-                    Con mi primer profesor de flauta, aprendí a limpiar, desarmar y hacer pequeñas correcciones y ajustes a mi instrumento.
-                    Años mas tarde, en mi adolescencia construí con amigos una guitarra eléctrica.</p>
+                <h3><?php echo $trabajoTitle3; ?></h3>
+                <p><?php echo $trabajoText3; ?></p>
+            </div>
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo3; ?>" alt="imagen">
             </div>
         </div>
-    </div>
-    <div class="ds-container">
         <div class="modulo-mi-trabajo">
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo4; ?>" alt="imagen">
+            </div>
             <div class="modulo-mi-trabajo__texto">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae similique, temporibus aliquam obcaecati consectetur iste ab ut necessitatibus nulla optio! Deleniti
-                    consectetur repellat quod corporis necessitatibus ducimus culpa accusamus sint! Inventore, neque temporibus voluptas nisi sunt itaque aliquid repellat?</p>
+                <h3><?php echo $trabajoTitle4; ?></h3>
+                <p><?php echo $trabajoText4; ?></p>
+            </div>
+        </div>
+        <div class="modulo-mi-trabajo reverse">
+            <div class="modulo-mi-trabajo__texto">
+                <h3><?php echo $trabajoTitle5; ?></h3>
+                <p><?php echo $trabajoText5; ?></p>
             </div>
             <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo ($imageTrabajo5); ?>" alt="imagen">
+                <img src="<?php echo $imageTrabajo5; ?>" alt="imagen">
             </div>
         </div>
     </div>

@@ -1,20 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 .acerca_main {
-  padding: 150px 120px;
+  padding: 0 0 200px 0;
+  background: linear-gradient(to bottom, #001525, #0d2435, #001525);
+}
+
+.acerca-title {
+  color: #623E2A;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 200px;
+  text-shadow: 3px 3px 20px rgba(255, 255, 255, 0.5);
 }
 
 .container-acerca {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 265px;
 }
 
 .modulo-acerca {
   display: flex;
   margin: auto;
-  gap: 45px;
-  align-items: center;
+  gap: 10px;
+  /* align-items: center; */
+  background-color: #EFEBE5;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px 0px rgba(255, 255, 255, 0.5);
 }
 .modulo-acerca__imagen {
   flex: 1;
@@ -22,38 +34,45 @@
 }
 .modulo-acerca__imagen img {
   aspect-ratio: 4/3;
-  border-radius: 20px;
-  box-shadow: 4px 4px 12px -1px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 .modulo-acerca__texto {
-  color: #EFEBE5;
+  color: #623E2A;
   flex: 1;
   width: 50%;
+  margin: auto;
+  padding: 25px;
 }
-.modulo-acerca__texto h4 {
-  padding: 20px;
+.modulo-acerca__texto h3 {
+  padding-bottom: 30px;
   font-size: 35px;
   text-align: center;
+  text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6);
 }
 .modulo-acerca__texto p {
-  padding: 20px;
-  font-size: 18px;
+  /* padding: 20px; */
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 768px) {
   .container-acerca.ds-container {
     padding: 0;
+    gap: 75px;
   }
   .acerca_main {
-    padding: 100px 20px;
+    padding: 0 30px 100px 30px;
+  }
+  .acerca-title {
+    padding: 100px 0;
   }
   .container-acerca .modulo-acerca:nth-child(2) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .modulo-acerca {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0 10px;
+    gap: 35px;
   }
   .modulo-acerca__imagen {
     padding: 25px 0;
@@ -67,14 +86,14 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .acerca_main {
-    padding: 100px 120px;
+    padding: 0 120px 125px 120px;
   }
   .container-acerca .modulo-acerca:nth-child(2) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .modulo-acerca {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .modulo-acerca__imagen {
     width: 100%;

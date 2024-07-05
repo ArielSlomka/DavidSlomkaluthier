@@ -22,8 +22,7 @@
 <header class="header">
     <div class="header__container">
         <div class="header__titulos">
-            <h1 class="header__titulo">David Slomka</h1>
-            <h3 class="header__subtitulo">Luthier</h3>
+            <h1 class="header__titulo">David Slomka <span class="header__subtitulo">luthier</span></h1>
         </div>
     </div>
 </header>

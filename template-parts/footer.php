@@ -1,9 +1,8 @@
 <footer class="footer">
-
-    <h3 class="footer__title">David Slomka <br> luthier</h3>
+    <h2 class="footer__title">David Slomka<span class="footer__subtitle">luthier</span></h2>
     <div class="footer__boxes">
         <div class="footer__box">
-            <h4 class="footer__subtitulo">Información de contacto</h4>
+            <h3 class="footer__contact">Información de contacto</h3>
             <p>Direccion: Calle 443 n2931 City Bell, La Plata, Buenos Aires</p>
             <p>Telefono: +5491136281948</p>
             <p>Mail: sym_flute@hotmail.com</p>
@@ -14,11 +13,17 @@
         <div class="footer__box">
             <!-- <h4 class="footer__subtitulo">Mis redes</h4> -->
             <div class="footer__redes">
-                <a href="https://www.instagram.com/davidslomkaluthier/" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.facebook.com/david.slomkaluthier" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="mailto:sym_flute@hotmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.instagram.com/davidslomkaluthier/" target="_blank">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoInstaSinFondo.png'; ?>" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="https://www.facebook.com/david.slomkaluthier" target="_blank">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoFaceSinFondo.png'; ?>" alt="Facebook" class="footer__social-icon">
+                </a>
+                <a href="mailto:sym_flute@hotmail.com">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoEmailSinFondo.png'; ?>" alt="Email" class="footer__social-icon">
+                </a>
             </div>
         </div>
     </div>
-    <p class="copyright">© 2024 David Slomka luthier</p>
+        <p class="copyright">© 2024 David Slomka luthier</p>
 </footer>

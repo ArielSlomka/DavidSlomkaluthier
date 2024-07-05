@@ -7,15 +7,20 @@ $button-bg-color: #333;
 $button-color: #fff;
 
 main {
-    padding-bottom: 100px;
+    padding-bottom: 125px;
+}
+
+.ds-container.container-contacto {
+    gap: 75px;
 }
 
 #titulo-contacto {
     text-align: center;
-    padding: 75px;
+    /* padding: 75px; */
     color: #EFEBE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 50px;
+    padding-top: 100px;
 }
 
 .wpcf7 {
@@ -37,16 +42,6 @@ main {
         margin: auto;
         color: #EFEBE5;
     }
-
-    /* .campo {
-        margin-bottom: 20px;
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #EFEBE5;
-        } */
 
         input[type="text"],
         input[type="email"],
@@ -77,5 +72,24 @@ main {
         &:hover {
             background-color: darken($button-bg-color, 10%);
         }
+    } 
+}
+
+@media only screen and (max-width: 767px){
+    #titulo-contacto{
+        padding: 75px 0 75px 0;
     }
+}
+.ds-container.container-contacto {
+    gap: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #titulo-contacto{
+        padding: 75px 0 75px 0;
+    }
+}
+
+.ds-container.container-contacto {
+    gap: 0;
 }

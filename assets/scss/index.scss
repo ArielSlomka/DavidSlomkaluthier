@@ -4,13 +4,18 @@
 .titulo-modulo-card {
     text-align: center;
     font-size: 50px;
-    padding: 0 0 100px 0;
-    color: #623E2A;
+    padding: 100px 0 100px 0;
+    color: #1b3244;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .index_main {
     background-color: #EFEBE5;
-    padding: 150px 120px;
+    padding: 0 120px 165px 120px;
+}
+
+.container-index{
+    height: auto;
 }
 
 .cards-container {
@@ -18,6 +23,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     padding-bottom: 75px;
+    
 }
 
 .card {
@@ -25,14 +31,17 @@
     
     &__image {
         display: flex;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
 
         img {
             // estas 3 propiedades van siempre juntas (o casi) y hacen que la imagen se adapte al tamaño del contenedor
             object-fit: cover;
             width: 100%;
             height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
 
             // relacion de aspecto - normaliza el tamaño de las imagenes seleccionadas
             aspect-ratio: 3/2;
@@ -44,25 +53,29 @@
         display: flex;
         flex-direction: column;
         background-color: #55555510;
-        color: #623E2A;
+        color: #1b3244;
         height: auto;
         min-height: 70%;
         margin: auto;
         justify-content: center;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         
     }
 
-    h4 {
+    h3 {
         padding: 20px;
         font-size: 35px;
         font-weight: normal;
         text-align: center;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
         
     }
 
     p {
         padding: 20px;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -70,17 +83,21 @@
 // Media query para dispositivos móviles
 @media only screen and (max-width: 767px) {
     .index_main{
-        padding: 0;
+        padding: 0 30px;
     }
     
     .container-index{
         padding: 35px 0;
     }
     
+    .titulo-modulo-card{
+        padding: 75px 0 100px 0;
+    }
+
     .cards-container {
         display: flex;
-        flex-direction: column;   
-        padding: 15px;     
+        flex-direction: column;
+        text-align: center;     
     }
 
     .card {
@@ -103,9 +120,11 @@
         flex-direction: column;   
         padding: 0;     
         margin-bottom: 0;
+        gap: 125px;
+        text-align: center;
     }
 
     .card:last-child {
-        margin-bottom: 50px;
+        margin-bottom: 125px;
     }
 }
