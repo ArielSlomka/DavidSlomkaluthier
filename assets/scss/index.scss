@@ -4,9 +4,14 @@
 .titulo-modulo-card {
     text-align: center;
     font-size: 50px;
-    padding: 100px 0 100px 0;
+    padding: 0;
     color: #1b3244;
     text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
+    transition: 0.75s;
+
+        &:hover{
+            opacity: 0.8;
+        }
 }
 
 .index_main {
@@ -26,8 +31,13 @@
     
 }
 
+.cards-container:first-child {
+    margin-top: 165px;
+}   
+
 .card {
     border-radius: 15px;
+
     
     &__image {
         display: flex;
@@ -87,23 +97,30 @@
     }
     
     .container-index{
-        padding: 35px 0;
+        padding: 0;
     }
     
     .titulo-modulo-card{
-        padding: 75px 0 100px 0;
+        padding: 165px 0 165px 0;
     }
 
     .cards-container {
         display: flex;
         flex-direction: column;
-        text-align: center;     
+        text-align: center;   
+        padding-bottom: 0;  
+        gap: 165px;
     }
 
     .card {
-        margin-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .card:last-child {
+        margin-bottom: 165px;
     }
 }
+
 
 // Media query para tablets
 @media only screen and (min-width: 768px) and (max-width: 1120px) {
@@ -120,11 +137,11 @@
         flex-direction: column;   
         padding: 0;     
         margin-bottom: 0;
-        gap: 125px;
+        gap: 165px;
         text-align: center;
     }
 
     .card:last-child {
-        margin-bottom: 125px;
+        margin-bottom: 165px;
     }
 }

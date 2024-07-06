@@ -6,7 +6,7 @@ get_header();
 $imageContacto = get_field("image_contacto");
 ?>
 
-<main class="contacto_main" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(<?php echo $imageContacto;?>);
+<main class="contacto-main" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(<?php echo $imageContacto;?>);
     background-size: cover;
     background-position: center;">
     <div class="ds-container container-contacto">

@@ -18,6 +18,11 @@
     
     &__titulos {
         margin-bottom: 60px;
+        transition: 0.75s;
+
+        &:hover{
+            opacity: 0.6;
+        }
     
 
         &.show {

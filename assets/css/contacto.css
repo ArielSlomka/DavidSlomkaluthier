@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-main {
-  padding-bottom: 125px;
+.contacto-main {
+  padding-bottom: 165px;
 }
 
 .ds-container.container-contacto {
@@ -10,11 +10,10 @@ main {
 
 #titulo-contacto {
   text-align: center;
-  /* padding: 75px; */
   color: #EFEBE5;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 50px;
-  padding-top: 100px;
+  padding: 125px 0;
 }
 
 .wpcf7 {
@@ -24,16 +23,20 @@ main {
 .wpcf7-form {
   width: 400px;
   margin: auto;
-  background-color: #623E2A;
+  background-color: #1b3244;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  /*  .wpcf7-submit{
+       margin: 15px 0;
+   } */
 }
 .wpcf7-form p {
   margin: auto;
   color: #EFEBE5;
+  padding: 15px;
 }
 .wpcf7-form input[type=text],
 .wpcf7-form input[type=email],
@@ -46,8 +49,17 @@ main {
 }
 .wpcf7-form textarea {
   height: 100px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.wpcf7-form button {
+.wpcf7-form textarea:hover {
+  background-color: #1a1a1a;
+}
+.wpcf7-form input {
   width: 100%;
   padding: 10px;
   background-color: #333;
@@ -56,10 +68,19 @@ main {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-family: Arial, Helvetica, sans-serif;
 }
-.wpcf7-form button:hover {
+.wpcf7-form input:hover {
   background-color: #1a1a1a;
+}
+
+.wpcf7-response-output, .screen-reader-response {
+  color: #EFEBE5;
+  text-align: center;
+  /* padding: 15px; */
+}
+
+.screen-reader-response {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
