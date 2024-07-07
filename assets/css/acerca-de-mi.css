@@ -1,32 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 .acerca_main {
-  padding: 0 0 200px 0;
-  background: linear-gradient(to bottom, #001525, #0d2435, #001525);
+  padding: 165px 0 200px 0;
+  background: linear-gradient(to bottom, #0d2435, #001525, #0d2435);
 }
 
 .acerca-title {
   color: #EFEBE5;
   font-size: 50px;
   text-align: center;
-  padding-bottom: 200px;
+  padding: 0;
   text-shadow: 3px 3px 20px rgba(255, 255, 255, 0.5);
+  transition: 0.75s;
+}
+.acerca-title:hover {
+  opacity: 0.5;
 }
 
 .container-acerca {
   display: flex;
   flex-direction: column;
   gap: 265px;
+  margin-top: 165px;
 }
 
 .modulo-acerca {
   display: flex;
   margin: auto;
   gap: 10px;
-  /* align-items: center; */
   background-color: #EFEBE5;
   border-radius: 10px;
   box-shadow: 3px 3px 20px 0px rgba(255, 255, 255, 0.5);
+  transition: 0.75s;
+}
+.modulo-acerca:hover {
+  opacity: 0.8;
 }
 .modulo-acerca__imagen {
   flex: 1;
@@ -58,12 +66,13 @@
   .container-acerca.ds-container {
     padding: 0;
     gap: 165px;
+    margin-top: 125px;
   }
   .acerca_main {
-    padding: 0 30px 0 30px;
+    padding: 125px 30px 0 30px;
   }
   .acerca-title {
-    padding: 165px 0;
+    padding: 0;
   }
   .container-acerca .modulo-acerca:nth-child(2) {
     flex-direction: column;
@@ -88,13 +97,12 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* .acerca_main {
-      padding: 0 120px;
+  .acerca_main {
+    padding: 165px 120px;
   }
-
-  .container-acerca.ds-container{
-      padding: 0;
-  } */
+  .container-acerca.ds-container {
+    padding: 0;
+  }
   .container-acerca .modulo-acerca:nth-child(2) {
     flex-direction: column;
   }

@@ -7,7 +7,7 @@ $button-bg-color: #333;
 $button-color: #fff;
 
 .contacto-main {
-    padding-bottom: 165px;
+    padding: 125px 120px;
 }
 
 .ds-container.container-contacto {
@@ -19,7 +19,7 @@ $button-color: #fff;
     color: #EFEBE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 50px;
-    padding: 125px 0;
+    padding: 0;
 }
 
 .wpcf7 {
@@ -27,7 +27,7 @@ $button-color: #fff;
 }
 
 .wpcf7-form {
-    width: 400px;
+    width: 450px;
     margin: auto;
     background-color: #1b3244;
     padding: 20px;
@@ -35,6 +35,7 @@ $button-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
     
 
     p {
@@ -83,16 +84,11 @@ $button-color: #fff;
                 background-color: darken($button-bg-color, 10%);
             }
         } 
-
-       /*  .wpcf7-submit{
-            margin: 15px 0;
-        } */
 }
 
 .wpcf7-response-output, .screen-reader-response{
     color: #EFEBE5;
     text-align: center;
-    /* padding: 15px; */
 }
 
 .screen-reader-response{
@@ -100,17 +96,26 @@ $button-color: #fff;
 }
 
 @media only screen and (max-width: 767px){
+    .contacto-main {
+        padding: 165px 30px;
+    }
+    
     #titulo-contacto{
-        padding: 75px 0 75px 0;
+        padding: 0;
     }
 }
 .ds-container.container-contacto {
     gap: 0;
+    padding: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .contacto-main {
+        padding: 165px 120px;
+    }
+    
     #titulo-contacto{
-        padding: 75px 0 75px 0;
+        padding: 0;
     }
 }
 
