@@ -4,57 +4,43 @@
     width: 100%;
     backdrop-filter: blur(10px);
     z-index: 99;
-    height: 0;
     overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
     transition: .5s;
-    opacity: 0;
+    //opacity: 0;
+    padding: 0 80px;
+    background-color: #1b3244;
+
+    &#js-navbar {
+        height: 0;
+    }
     
-    &.show {
+    &.show,
+    &#no-js {
         opacity: 0.9;
     }
 
     &__box {
-        width: 98%;
-        background-color: #1b3244;
         backdrop-filter: blur(10px);
         z-index: 99;
     }
 
     &__logo {
         display: flex;
-        width: 65px;
-        height: auto;   
-        margin: auto;
+        width: 110px;
         
         img {
             transition: .5s;
             position: relative;
-
-            /*  &::after {
-                content: "";
-                width: 0;
-                height: 1px;
-                background-color: rgb(164, 164, 164);
-                position: absolute;
-                bottom: -2px;
-                right: 0;
-                transition: .5s;
-            } */
+            opacity: 0.7;
 
             &:hover {
-                opacity: 0.3;
-
-                /* &::after {
-                    left: 0;
-                    width: 100%;
-                } */
+                opacity: 1;
+                cursor: pointer;
             }
         }
     }
-}
-
-.box-logo.navbar__box {
-    width: 10%;
 }
 
 .box-menu {
@@ -68,7 +54,7 @@
     width: 100%;
     background-color: #1b3244;
     backdrop-filter: blur(10px);
-    z-index: 99;
+    /* z-index: 99; */
     gap: 25px;
     margin: auto;
 }
@@ -78,9 +64,10 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     text-align: center;
     margin: auto;
+    gap: 60px;
 }
 
 .menu_item {
@@ -98,6 +85,7 @@ a {
     line-height: 28px;
     position: relative;
     text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
+    opacity: 0.75;
     
     &::after {
         content: "";
@@ -111,7 +99,7 @@ a {
     }
 
     &:hover {
-        color: rgb(164, 164, 164);
+        opacity: 1;
 
         &::after {
             left: 0;
@@ -158,9 +146,7 @@ a {
     }
 
     .main-menu {
-        margin-bottom: 30px;
-        max-width: 90%;
-
+        
         a {
             font-size: 20px;
             transition: .5s;

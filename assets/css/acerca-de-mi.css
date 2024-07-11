@@ -7,14 +7,10 @@
 
 .acerca-title {
   color: #EFEBE5;
-  font-size: 50px;
+  font-size: 65px;
   text-align: center;
   padding: 0;
-  text-shadow: 3px 3px 20px rgba(255, 255, 255, 0.5);
-  transition: 0.75s;
-}
-.acerca-title:hover {
-  opacity: 0.5;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
 }
 
 .container-acerca {
@@ -24,17 +20,25 @@
   margin-top: 165px;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse #image-reverse {
+  border-radius: 10px 0 0 10px;
+}
+
 .modulo-acerca {
   display: flex;
   margin: auto;
-  gap: 10px;
   background-color: #EFEBE5;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px 0px rgba(255, 255, 255, 0.5);
   transition: 0.75s;
+  opacity: 0.8;
+  min-height: 620px;
 }
 .modulo-acerca:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 .modulo-acerca__imagen {
   flex: 1;
@@ -42,7 +46,10 @@
 }
 .modulo-acerca__imagen img {
   aspect-ratio: 4/3;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
+}
+.modulo-acerca__imagen .acerca-image1 {
+  object-position: right;
 }
 .modulo-acerca__texto {
   color: #001525;
@@ -55,11 +62,11 @@
   padding-bottom: 30px;
   font-size: 35px;
   text-align: center;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .modulo-acerca__texto p {
   /* padding: 20px; */
-  font-size: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -75,7 +82,7 @@
     padding: 0;
   }
   .container-acerca .modulo-acerca:nth-child(2) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .container-acerca .modulo-acerca:last-child {
     margin-bottom: 165px;
@@ -89,6 +96,13 @@
   .modulo-acerca__imagen {
     /* padding: 25px 0; */
     width: 100%;
+  }
+  .modulo-acerca__imagen #image-reverse {
+    border-radius: 10px 10px 0 0;
+  }
+  .modulo-acerca__imagen img {
+    aspect-ratio: 4/3;
+    border-radius: 10px 10px 0 0;
   }
   .modulo-acerca__texto {
     margin: auto;
@@ -104,7 +118,7 @@
     padding: 0;
   }
   .container-acerca .modulo-acerca:nth-child(2) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .modulo-acerca {
     display: flex;
@@ -112,6 +126,13 @@
   }
   .modulo-acerca__imagen {
     width: 100%;
+  }
+  .modulo-acerca__imagen #image-reverse {
+    border-radius: 10px 10px 0 0;
+  }
+  .modulo-acerca__imagen img {
+    aspect-ratio: 4/3;
+    border-radius: 10px 10px 0 0;
   }
   .modulo-acerca__texto {
     width: 100%;

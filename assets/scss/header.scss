@@ -20,11 +20,6 @@
         margin-bottom: 60px;
         transition: 0.75s;
 
-        &:hover{
-            opacity: 0.6;
-        }
-    
-
         &.show {
             .header__titulo,
             .header__subtitulo {
@@ -103,7 +98,3 @@
         }  
     }
 }
-
-/* .ds-container {
-    padding: 100px 0;
-} */

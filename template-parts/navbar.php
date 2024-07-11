@@ -1,8 +1,10 @@
-<div class="navbar">
+<div class="navbar" id="<?php echo is_page_template( 'templates/template-index.php' ) ? 'js-navbar' : 'no-js'; ?>">
     <div class="navbar__box box-logo">
-        <picture class="navbar__logo">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/logodslposta.png'; ?>" alt="logo">
-        </picture>
+        <a href="<?php echo home_url(); ?>" class="navbar__logo">
+            <picture>
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/logodslposta.png'; ?>" alt="logo">
+            </picture>
+        </a>
     </div>
     <div class="navbar__box box-menu">
         <?php
@@ -16,9 +18,8 @@
         ?>
     </div>
 </div>
-
-
-
+</div>
+    
 <header class="header">
     <div class="header__container">
         <div class="header__titulos">

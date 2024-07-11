@@ -2,23 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 .footer {
   background-color: #1b3244;
-  /* padding: 50px 0; */
   color: #EFEBE5;
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
 }
 .footer__title {
-  font-size: 50px;
+  font-size: 65px;
   color: #EFEBE5;
   font-weight: 600;
   text-align: center;
   padding: 50px 0 50px 0;
   text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6);
-  transition: 0.75s;
-}
-.footer__title:hover {
-  opacity: 0.5;
 }
 .footer__subtitle {
   display: block;
@@ -27,7 +21,6 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* padding: 25px 0 50px 0; */
 }
 .footer__box {
   width: 30%;
@@ -40,19 +33,23 @@
   line-height: 1.2;
   margin: auto;
   padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.2px;
 }
 .footer__box .logo {
   width: 50%;
   height: auto;
   margin: auto;
-  transition: 0.75s;
 }
-.footer__box .logo:hover {
-  opacity: 0.5;
-}
-.footer__box a {
+.footer__box #icons-redes {
   display: inline-flex;
   margin: auto;
+}
+.footer__box #icons-redes:hover::after {
+  left: 0;
+  height: 0px;
+  width: 0%;
 }
 .footer__contact {
   text-align: center;
@@ -78,6 +75,7 @@
 
 .copyright {
   padding: 75px 0 25px 25px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 767px) {

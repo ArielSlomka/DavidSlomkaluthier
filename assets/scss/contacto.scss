@@ -18,7 +18,7 @@ $button-color: #fff;
     text-align: center;
     color: #EFEBE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 50px;
+    font-size: 65px;
     padding: 0;
 }
 
@@ -42,6 +42,7 @@ $button-color: #fff;
         margin: auto;
         color: #EFEBE5;
         padding: 15px;
+        font-family: $font2;
     }
 
         input[type="text"],

@@ -26,16 +26,16 @@ $acercaPrincipalTitle = get_field("acerca_principal_title");
                 <p><?php echo $acercaText1; ?></p>
             </div>
             <div class="modulo-acerca__imagen">
-                <img src="<?php echo $imageAcerca1; ?>" alt="imagen">
+                <img src="<?php echo $imageAcerca1; ?>" alt="imagen" class="acerca-image1">
             </div>
         </div>
-        <div class="modulo-acerca">
-            <div class="modulo-acerca__imagen">
-                <img src="<?php echo $imageAcerca2; ?>" alt="imagen">
-            </div>
+        <div class="modulo-acerca reverse">
             <div class="modulo-acerca__texto">
                 <h3><?php echo $acercaTitle2; ?></h3>
                 <p><?php echo $acercaText2; ?></p>
+            </div>
+            <div class="modulo-acerca__imagen">
+                <img src="<?php echo $imageAcerca2; ?>" alt="imagen"  id="image-reverse" class="acerca-image2">
             </div>
         </div>
         <div class="modulo-acerca">
@@ -44,7 +44,7 @@ $acercaPrincipalTitle = get_field("acerca_principal_title");
                 <p><?php echo $acercaText3; ?></p>
             </div>
             <div class="modulo-acerca__imagen">
-                <img src="<?php echo $imageAcerca3; ?>" alt="imagen">
+                <img src="<?php echo $imageAcerca3; ?>" alt="imagen" class="acerca-image3">
             </div>
         </div>
     

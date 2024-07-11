@@ -26,12 +26,12 @@ $trabajoPrincipalTitle = get_field("trabajo_principal_title");
     <h2><?php echo $trabajoPrincipalTitle ?></h2>
     <div class="ds-container container-trabajo">
         <div class="modulo-mi-trabajo reverse">
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo1; ?>" alt="imagen">
+            </div>
             <div class="modulo-mi-trabajo__texto">
                 <h3><?php echo $trabajoTitle1 ?></h3>
                 <p><?php echo $trabajoText1 ?></p>
-            </div>
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo $imageTrabajo1; ?>" alt="imagen">
             </div>
         </div>
         <div class="modulo-mi-trabajo">
@@ -44,12 +44,12 @@ $trabajoPrincipalTitle = get_field("trabajo_principal_title");
             </div>
         </div>
         <div class="modulo-mi-trabajo reverse">
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo3; ?>" alt="imagen">
+            </div>
             <div class="modulo-mi-trabajo__texto">
                 <h3><?php echo $trabajoTitle3; ?></h3>
                 <p><?php echo $trabajoText3; ?></p>
-            </div>
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo $imageTrabajo3; ?>" alt="imagen">
             </div>
         </div>
         <div class="modulo-mi-trabajo">
@@ -62,12 +62,12 @@ $trabajoPrincipalTitle = get_field("trabajo_principal_title");
             </div>
         </div>
         <div class="modulo-mi-trabajo reverse">
+            <div class="modulo-mi-trabajo__imagen">
+                <img src="<?php echo $imageTrabajo5; ?>" alt="imagen">
+            </div>
             <div class="modulo-mi-trabajo__texto">
                 <h3><?php echo $trabajoTitle5; ?></h3>
                 <p><?php echo $trabajoText5; ?></p>
-            </div>
-            <div class="modulo-mi-trabajo__imagen">
-                <img src="<?php echo $imageTrabajo5; ?>" alt="imagen">
             </div>
         </div>
     </div>

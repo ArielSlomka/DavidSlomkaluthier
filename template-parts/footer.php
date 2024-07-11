@@ -13,13 +13,13 @@
         <div class="footer__box">
             <!-- <h4 class="footer__subtitulo">Mis redes</h4> -->
             <div class="footer__redes">
-                <a href="https://www.instagram.com/davidslomkaluthier/" target="_blank">
+                <a href="https://www.instagram.com/davidslomkaluthier/" target="_blank" class="icons-redes">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoInstaSinFondo.png'; ?>" alt="Instagram" class="footer__social-icon">
                 </a>
-                <a href="https://www.facebook.com/david.slomkaluthier" target="_blank">
+                <a href="https://www.facebook.com/david.slomkaluthier" target="_blank" class="icons-redes">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoFaceSinFondo.png'; ?>" alt="Facebook" class="footer__social-icon">
                 </a>
-                <a href="mailto:sym_flute@hotmail.com">
+                <a href="mailto:sym_flute@hotmail.com" class="icons-redes">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/IconoEmailSinFondo.png'; ?>" alt="Email" class="footer__social-icon">
                 </a>
             </div>
