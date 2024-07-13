@@ -17,13 +17,17 @@
         ));
         ?>
     </div>
+    <div class="navbar__hamburger">
+        <div class="navbar__hamburger-line">
+            <span></span>
+        </div>
+        <div class="navbar__hamburger-line">
+            <span></span>
+        </div>
+        <div class="navbar__hamburger-line">
+            <span></span>
+        </div>
+    </div>
 </div>
 </div>
     
-<header class="header">
-    <div class="header__container">
-        <div class="header__titulos">
-            <h1 class="header__titulo">David Slomka <span class="header__subtitulo">luthier</span></h1>
-        </div>
-    </div>
-</header>

@@ -28,5 +28,27 @@ function hacerleCosasAlTitulo() {
 }
 
 // declaro Event Listeners para decidir cuándo se ejecutan las funciones y las llamo dentro.
-if(navbar) {document.addEventListener('DOMContentLoaded',  hacerleCosasAlNavbar);}
+if(navbar) {
+    document.addEventListener('DOMContentLoaded',  hacerleCosasAlNavbar);
+}
+
 document.addEventListener('DOMContentLoaded',  hacerleCosasAlTitulo);
+
+function hamburgerMenu() {
+    const navbarHamburger = document.querySelector('.navbar__hamburger');
+    const navbarMenu = document.querySelector('.navbar__box.box-menu');
+    const menuHeight = navbarMenu.querySelector('.nav').getBoundingClientRect().height;
+
+    navbarHamburger.addEventListener('click',  () => {
+        navbarMenu.classList.toggle('active');
+        navbarHamburger.classList.toggle('active');
+
+        if (navbarMenu.classList.contains('active')) {
+            navbarMenu.style.height = `${menuHeight}px`
+        } else {
+            navbarMenu.style.height = `0`
+        }
+    })
+}
+
+document.addEventListener('DOMContentLoaded',  hamburgerMenu);

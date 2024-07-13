@@ -5,12 +5,21 @@
   background: linear-gradient(to bottom, #0d2435, #001525, #0d2435);
 }
 
+#acerca-header {
+  min-height: 40vh;
+  height: 40vh;
+  padding-top: 95px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
 .acerca-title {
   color: #EFEBE5;
-  font-size: 65px;
+  font-size: 85px;
   text-align: center;
   padding: 0;
-  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
 }
 
 .container-acerca {

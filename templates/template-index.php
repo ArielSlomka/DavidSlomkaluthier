@@ -15,7 +15,13 @@ $cursosText = get_field("cursos_text");
 get_header();
 ?>
 
-
+<header class="header">
+    <div class="header__container">
+        <div class="header__titulos">
+            <h1 class="header__titulo">David Slomka <span class="header__subtitulo">luthier</span></h1>
+        </div>
+    </div>
+</header>
 <main class="index_main">
     <div class="container-index">
         <h2 class="titulo-modulo-card"><?php echo $indexTitle; ?></h2>

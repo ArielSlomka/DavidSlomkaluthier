@@ -21,9 +21,14 @@ $trabajoText5 = get_field("trabajo_text_5");
 $trabajoPrincipalTitle = get_field("trabajo_principal_title");
 ?>
 
-
+<header class="header" id="trabajo-header">
+    <div class="header__container trabajo-container">
+        <div class="header__titulos trabajo-titulos">
+            <h1 class="trabajo-titulo"><?php echo $trabajoPrincipalTitle ?></h1>
+        </div>
+    </div>
+</header>
 <main class="trabajo_main">
-    <h2><?php echo $trabajoPrincipalTitle ?></h2>
     <div class="ds-container container-trabajo">
         <div class="modulo-mi-trabajo reverse">
             <div class="modulo-mi-trabajo__imagen">

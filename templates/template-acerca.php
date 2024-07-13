@@ -14,11 +14,18 @@ $acercaText1 = get_field("acerca_text_1");
 $acercaText2 = get_field("acerca_text_2");
 $acercaText3 = get_field("acerca_text_3");
 $acercaPrincipalTitle = get_field("acerca_principal_title");
+$acercaHero = get_field("acerca_hero");
 ?>
 
-
+<header class="header" id="acerca-header" style="background-image: url('<?php echo $acercaHero; ?>');">
+    <div class="header__container">
+        <div class="header__titulos">
+            <h1 class="acerca-title"><?php echo $acercaPrincipalTitle; ?></h1>
+        </div>
+    </div>
+</header>
 <main class="acerca_main">
-    <h2 class="acerca-title"><?php echo $acercaPrincipalTitle; ?></h2>
+    
     <div class="container-acerca ds-container">
         <div class="modulo-acerca">
             <div class="modulo-acerca__texto">

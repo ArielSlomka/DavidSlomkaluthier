@@ -19,6 +19,11 @@
     &__titulos {
         margin-bottom: 60px;
         transition: 0.75s;
+        background-color: #0000003d;
+        border: 1px solid #41415d40;
+        border-radius: 12px;
+        backdrop-filter: blur(4px);
+        padding: 0px 120px;
 
         &.show {
             .header__titulo,

@@ -1,5 +1,8 @@
 <footer class="footer">
-    <h2 class="footer__title">David Slomka<span class="footer__subtitle">luthier</span></h2>
+    <div class="footer__box box-logo">
+        <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/img/logodslposta.png'; ?>" alt="logo">
+    </div>
+    <h2 class="footer__title">David Slomka Luthier</h2>
     <div class="footer__boxes">
         <div class="footer__box">
             <h3 class="footer__contact">Información de contacto</h3>
@@ -7,9 +10,7 @@
             <p>Telefono: +5491136281948</p>
             <p>Mail: sym_flute@hotmail.com</p>
         </div>
-        <div class="footer__box box-logo">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/img/logodslposta.png'; ?>" alt="logo">
-        </div>
+
         <div class="footer__box">
             <!-- <h4 class="footer__subtitulo">Mis redes</h4> -->
             <div class="footer__redes">

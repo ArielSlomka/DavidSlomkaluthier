@@ -8,6 +8,13 @@ $button-color: #fff;
 
 .contacto-main {
     padding: 125px 120px;
+    background-color: #EFEBE5;
+}
+
+#contacto-header{
+    min-height: 40vh;
+    height: 40vh;
+    padding-top: 95px;
 }
 
 .ds-container.container-contacto {
@@ -18,7 +25,7 @@ $button-color: #fff;
     text-align: center;
     color: #EFEBE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 65px;
+    font-size: 85px;
     padding: 0;
 }
 
@@ -34,9 +41,7 @@ $button-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    
+    flex-direction: column;    
 
     p {
         margin: auto;
